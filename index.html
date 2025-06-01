@@ -1,169 +1,134 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy Birthday My Khushi 💖</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Khushi 🎉</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #ffe6f0, #ffd9ec);
-      color: #444;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffe0f5);
+      color: #4b004b;
       overflow-x: hidden;
     }
-
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 3rem;
-      text-align: center;
-      margin-top: 1.2em;
-      color: #ff4da6;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #e60073;
     }
-
-    .love-letter {
-      max-width: 900px;
-      margin: 2em auto;
-      background: #fff0f5;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 128, 187, 0.2);
-      font-size: 1.15rem;
-      line-height: 1.9;
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 2em auto;
-      max-width: 1000px;
-    }
-
-    .gallery img {
+    img {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px auto;
       border-radius: 15px;
-      max-width: 300px;
-      height: auto;
-      box-shadow: 0 10px 15px rgba(255, 105, 180, 0.3);
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
     }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .floating-emojis {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 999;
-    }
-
-    .emoji {
-      position: absolute;
-      font-size: 2rem;
-      animation: float 6s infinite ease-in-out;
-      opacity: 0.8;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-10vh) rotate(360deg);
-        opacity: 0;
-      }
-    }
-
-    audio {
-      display: none;
-    }
-
-    .click-to-play {
+    .music-btn-container {
       text-align: center;
-      margin-top: 1em;
-      font-weight: bold;
-      color: #ff69b4;
+      margin: 15px 0;
     }
-
+    .play-btn {
+      background: #ff4da6;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(255, 77, 166, 0.4);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .play-btn:hover {
+      background: #e60073;
+    }
+    .floating-heart, .floating-sparkle {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      animation: floatUp 6s linear infinite;
+      z-index: 0;
+    }
+    .floating-heart::before {
+      content: "💖";
+    }
+    .floating-sparkle::before {
+      content: "✨";
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(1); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Happy Birthday, My Khushi 🎂💖</h1>
+<div class="music-btn-container">
+  <button onclick="playMusic()" class="play-btn">🎶 Play Our Song</button>
+</div>
 
-  <div class="love-letter">
-    <p>To My Khushi 🩷 My Sweetheart 🧁 My Jaan 💋 My Bayko 💍 My Baby 🧸 My Honey 🍯 My Queen 👑 My Girl 🌸 My Favorite Person 💌 …And the only girl I’d fight the whole universe for—especially that third person who tried to test our bond. LOL—jokes on them, because you're already booked, blessed, obsessed & madly in love with your Baby 😎💘</p>
-    
-    <p>🎂 Happy Birthday, My Love! 🎉💖</p>
-    
-    <p>Your soul feels like home to mine—every time I hear your voice or feel your presence, it’s like my heart whispers, “Finally, peace.” 🫶🏼 You don’t just make me happy, baby—you make my soul smile… like it’s wearing a hoodie of your warmth and sipping chai of your love ☕💕</p>
-    
-    <p>And baby... that one day—28th May 2025—from 11:15 AM to 5:56 PM? My heart still replays it like a perfect little movie. 🎬🍿 Mall mein ghummna, movie dekhna, teri haasi, tera haath pakadna—it felt like our own romantic Bollywood day out. Even the popcorn tasted better with you. And the way you looked at me during the movie... haayee, meri toh duniya hi ruk gayi 🥹❤️</p>
-    
-    <p>We laughed, clicked cute photos, shared food like typical filmy lovebirds 🕊️ and for those few hours—I swear the world outside didn’t exist. Just you. Just me. Just US. 💑✨</p>
-    
-    <p>And let’s not forget... your NAKHRE! 😩🙈 Jab nakhre karti ho na baby, mera toh dil literally “awww overload” ho jaata hai 😭💘 Jab bolti ho “hmm” in that cute annoyed tone, or when you act all mad and still cling to me—I swear I just wanna wrap you up in a blanket and keep you forever. 🥹🧸</p>
-    
-    <p>Main toh bas tumhara hoon yaar. Tu nakhre kare, ya ruth jaaye—main toh sirf tera rahne wala. 🌙</p>
-    
-    <p>We've had our cute little misunderstandings too 😅—like that 5-minute “breakup” drama and You: “You don’t love me like before!” Me: “Arey yaarrr ab aise kyuuuu bol rahi haiii abb kya ho gayaaa mera baby 😭😭😂” But even when you said “Fine, don’t talk to me” (and texted me 2 minutes later with “btw what did you eat?” 🥲💀) I NEVER stopped loving you. Not for one second. 💘</p>
-    
-    <p>When that one third person tried entering our love story 😤—Baby, we stood tall like King and Queen, held each other, and said: “Not today, Satan.” 😌💅🏼 You + Me = Stronger than my gaming addiction + your shopping haul combined 😂🎮🛍️</p>
-    
-    <p>Khushi, I hope today you smile like your dimples are getting paid for it 😁💸 Feel beautiful like you always are—even without a filter (because baby, no filter can compete with your natural glow ✨) And feel loved like the Queen 👑 of the most chaotic, romantic, filmy, and adorable love story ever.</p>
-    
-    <p>Let’s keep growing together, dancing in malls, fighting over chocolate, laughing at silly jokes, and dreaming of a forever that's as soft and magical as your voice when you say “I love you, baby.” 🥺💕</p>
-    
-    <p>Happy Birthday, my baby girl. You turn ordinary days into fairy tales, silence into melody, and “just another moment” into something I’ll remember forever. 💫</p>
-    
-    <p>Forever yours, Your Loyal Bae 💘 (Your Baby, Hubby, personal fanboy, & official crown-holder of the Queen of my heart 👑)</p>
-    
-    <p>P.S. I’m manifesting many more 28th May-type days with you—just you, me, love, fun, drama, and your nakhre. 🌸 You’re not just my Khushi—you’re meri Khushi ka reason. ❤️</p>
-    
-    <p>“You walked into my life like a dream… and every day feels like a fairytale with you, baby.” 🥰<br>
-    “Even Google doesn’t have answers to how much I love you, jaan.” 😘<br>
-    “If loving you was homework, I’d be the first bencher, baby.” 📚❤️</p>
-  </div>
+<div class="container">
+  <h1>Happy Birthday, My Queen 👑</h1>
 
-  <div class="gallery">
-    <img src="img1.jpeg.jpeg" alt="Couple selfie">
-    <img src="img2.jpeg.jpeg" alt="Bicep grab">
-    <img src="img3.jpeg.jpeg" alt="Cute moment">
-    <img src="img4.jpeg.jpeg" alt="Sweet memory">
-  </div>
+  <img src="img1.jpeg.jpeg" alt="Couple Selfie"/>
+  <img src="img2.jpeg.jpeg" alt="Bicep Grab"/>
+  <img src="img3.jpeg.jpeg" alt="Cute Together"/>
+  <img src="img4.jpeg.jpeg" alt="Same Theme"/>
 
-  <div class="click-to-play">🔊 If you're on phone, tap anywhere to feel the music!</div>
-  <audio autoplay loop controls id="bgmusic">
-    <source src="until_i_found_you.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+  <p>To My Khushi 🩷 My Sweetheart 🧁 My Jaan 💋 My Bayko 💍 My Baby 🧸 My Honey 🍯 My Queen 👑 My Girl 🌸 My Favorite Person 💌 …And the only girl I’d fight the whole universe for—especially that third person who tried to test our bond. LOL—jokes on them, because you're already booked, blessed, obsessed & madly in love with your Baby 😎💘</p>
+  <p>🎂 Happy Birthday, My Love! 🎉💖</p>
+  <p>Your soul feels like home to mine—every time I hear your voice or feel your presence, it’s like my heart whispers, “Finally, peace.” 🫶🏼 You don’t just make me happy, baby—you make my soul smile… like it’s wearing a hoodie of your warmth and sipping chai of your love ☕💕</p>
+  <p>And baby... that one day—28th May 2025—from 11:15 AM to 5:56 PM? My heart still replays it like a perfect little movie. 🎬🍿 Mall mein ghummna, movie dekhna, teri haasi, tera haath pakadna—it felt like our own romantic Bollywood day out. Even the popcorn tasted better with you. And the way you looked at me during the movie... haayee, meri toh duniya hi ruk gayi 🥹❤️</p>
+  <p>We laughed, clicked cute photos, shared food like typical filmy lovebirds 🕊️ and for those few hours—I swear the world outside didn’t exist. Just you. Just me. Just US. 💑✨</p>
+  <p>And let’s not forget... your NAKHRE! 😩🙈 Arre hayeee... jab nakhre karti ho na baby, mera toh dil literally “awww overload” ho jaata hai 😭💘 Jab bolti ho “hmm” in that cute annoyed tone, or when you act all mad and still cling to me—I swear I just wanna wrap you up in a blanket and keep you forever. 🥹🧸 Main toh bas tumhara hoon yaar. Tu nakhre kare, ya ruth jaaye—main toh sirf tera rahne wala. 🌙</p>
+  <p>We've had our cute little misunderstandings too 😅—like that 5-minute “breakup” drama and You: “You don’t love me like before!” Me: “Arey yaarrr ab aise kyuuuu bol rahi haiii abb kya ho gayaaa mera baby 😭😭😂” But even when you said “Fine, don’t talk to me” (and texted me 2 minutes later with “btw what did you eat?” 🥲💀) I NEVER stopped loving you. Not for one second. 💘</p>
+  <p>When that one third person tried entering our love story 😤—Baby, we stood tall like King and Queen, held each other, and said: “Not today, Satan.” 😌💅🏼 You + Me = Stronger than my gaming addiction + your shopping haul combined 😂🎮🛍️</p>
+  <p>Khushi, I hope today you smile like your dimples are getting paid for it 😁💸 Feel beautiful like you always are—even without a filter (because baby, no filter can compete with your natural glow ✨) And feel loved like the Queen 👑 of the most chaotic, romantic, filmy, and adorable love story ever.</p>
+  <p>Let’s keep growing together, dancing in malls, fighting over chocolate, laughing at silly jokes, and dreaming of a forever that's as soft and magical as your voice when you say “I love you, baby.” 🥺💕</p>
+  <p>Happy Birthday, my baby girl. You turn ordinary days into fairy tales, silence into melody, and “just another moment” into something I’ll remember forever. 💫</p>
+  <p>Forever yours,<br>Your Loyal Bae 💘 (Your Baby, Hubby, personal fanboy, & official crown-holder of the Queen of my heart 👑)</p>
+  <p>P.S. I’m manifesting many more 28th May-type days with you—just you, me, love, fun, drama, and your nakhre. 🌸 You’re not just my Khushi—you’re meri Khushi ka reason. ❤️</p>
+</div>
 
-  <div class="floating-emojis"></div>
+<audio id="bgmusic" loop>
+  <source src="until_i_found_you.mp3" type="audio/mpeg">
+</audio>
 
-  <script>
-    const emojis = ["💖", "💫", "✨", "💘", "💕", "🥰", "💓", "🌸"];
-    const container = document.querySelector(".floating-emojis");
+<script>
+function playMusic() {
+  const audio = document.getElementById("bgmusic");
+  audio.play();
+}
 
-    for (let i = 0; i < 30; i++) {
-      const emoji = document.createElement("div");
-      emoji.classList.add("emoji");
-      emoji.style.left = Math.random() * 100 + "vw";
-      emoji.style.animationDelay = Math.random() * 5 + "s";
-      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-      container.appendChild(emoji);
-    }
-  </script>
+window.addEventListener("load", () => {
+  const audio = document.getElementById("bgmusic");
+  audio.play().catch(() => {});
+});
+
+// Create floating emojis
+const emojis = ['💖', '✨', '💘', '🌸'];
+for (let i = 0; i < 25; i++) {
+  const emoji = document.createElement('div');
+  emoji.className = Math.random() > 0.5 ? 'floating-heart' : 'floating-sparkle';
+  emoji.style.left = Math.random() * 100 + 'vw';
+  emoji.style.animationDuration = (6 + Math.random() * 4) + 's';
+  document.body.appendChild(emoji);
+}
+</script>
 
 </body>
 </html>
